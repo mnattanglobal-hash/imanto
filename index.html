@@ -7,43 +7,47 @@
 <meta name="description" content="A Imanto carrega o campo magnético do seu negócio com IA. O mercado passa a vir até você, e você sai na frente de quem faz marketing comum." />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta name="author" content="Imanto" />
-<meta name="theme-color" content="#FAF8F4" />
+<meta name="theme-color" content="#F4F5FF" />
 <link rel="canonical" href="https://imanto.com.br/" />
 <link rel="alternate" hreflang="pt-BR" href="https://imanto.com.br/?lang=pt" />
 <link rel="alternate" hreflang="en" href="https://imanto.com.br/?lang=en" />
 <link rel="alternate" hreflang="x-default" href="https://imanto.com.br/" />
-<link rel="icon" type="image/png" href="assets/imanto-favicon.png" />
-<link rel="apple-touch-icon" href="assets/imanto-favicon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/imanto-favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="assets/imanto-favicon-16.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="assets/imanto-favicon-512.png" />
+<link rel="apple-touch-icon" href="assets/imanto-favicon-192.png" />
 
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Imanto" />
 <meta property="og:title" content="Imanto — Vire o ímã do seu mercado" />
 <meta property="og:description" content="Marketing magnético movido por IA: a demanda qualificada vem até você, com a vantagem de estar à frente da concorrência." />
 <meta property="og:url" content="https://imanto.com.br/" />
-<meta property="og:image" content="https://imanto.com.br/assets/imanto-emblem-dark.png" />
+<meta property="og:image" content="https://imanto.com.br/assets/imanto-og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 <meta property="og:locale" content="pt_BR" />
 <meta property="og:locale:alternate" content="en_US" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Imanto — Vire o ímã do seu mercado" />
 <meta name="twitter:description" content="Marketing magnético movido por IA: o mercado vira na sua direção, com a vantagem da IA." />
-<meta name="twitter:image" content="https://imanto.com.br/assets/imanto-emblem-dark.png" />
+<meta name="twitter:image" content="https://imanto.com.br/assets/imanto-og.jpg" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     { "@type": "Organization", "@id": "https://imanto.com.br/#org", "name": "Imanto",
-      "url": "https://imanto.com.br/", "logo": "https://imanto.com.br/assets/imanto-emblem-dark.png",
+      "url": "https://imanto.com.br/", "logo": "https://imanto.com.br/assets/imanto-favicon-512.png",
       "description": "Imanto é uma empresa de marketing magnético movida por IA. Carrega a autoridade do cliente num campo que puxa demanda qualificada e o coloca à frente da concorrência.",
       "slogan": "Vire o ímã do seu mercado.", "areaServed": "BR", "sameAs": [] },
     { "@type": "WebSite", "@id": "https://imanto.com.br/#website", "url": "https://imanto.com.br/",
       "name": "Imanto", "inLanguage": ["pt-BR","en"], "publisher": {"@id":"https://imanto.com.br/#org"} },
     { "@type": "ProfessionalService", "@id": "https://imanto.com.br/#service", "name": "Imanto",
-      "url": "https://imanto.com.br/", "image": "https://imanto.com.br/assets/imanto-emblem-dark.png",
+      "url": "https://imanto.com.br/", "image": "https://imanto.com.br/assets/imanto-og.jpg",
       "description": "Marketing magnético movido por IA: posicionamento, conteúdo e distribuição (orgânico, pago e outbound) que puxam demanda qualificada e colocam o cliente à frente do mercado.",
       "areaServed": "Global", "serviceType": "Marketing magnético movido por IA", "provider": {"@id":"https://imanto.com.br/#org"} },
     { "@type": "FAQPage", "@id": "https://imanto.com.br/#faq", "mainEntity": [
@@ -59,10 +63,16 @@
 
 <style>
   :root{
-    --paper:#FAF8F4; --ivory:#F2EEE6; --ink:#16140F; --copper:#B87333; --amber:#D9A566;
-    --dust:#6B6457; --line:#E2DCD0;
+    --blue:#2D4BFF; --purple:#7B3FF2; --red:#FF3B6B;
+    --navy:#070725; --navy2:#160A33;
+    --paper:#F4F5FF; --white:#fff; --ink:#10122E;
+    --muted:#5B5F86; --mutedD:#9AA0D0; --whiteD:#EEF0FF;
+    --line:#E4E6F5; --lineD:#262A55;
+    --grad:linear-gradient(90deg,#2D4BFF,#7B3FF2,#FF3B6B);
+    --grad-btn:linear-gradient(120deg,#2D4BFF,#7B3FF2 55%,#FF3B6B);
     --maxw:1100px; --ease:cubic-bezier(.2,.7,.2,1);
-    --serif:"Spectral",Georgia,serif; --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    --display:"Space Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -70,99 +80,135 @@
     -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
   a{color:inherit;text-decoration:none}
-  ::selection{background:var(--amber);color:var(--ink)}
-  :focus-visible{outline:2px solid var(--copper);outline-offset:3px;border-radius:3px}
-  .skip{position:absolute;left:-9999px;top:0;background:var(--copper);color:#fff;padding:10px 16px;z-index:100}
+  img{max-width:100%}
+  ::selection{background:var(--purple);color:#fff}
+  :focus-visible{outline:2px solid var(--purple);outline-offset:3px;border-radius:3px}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--purple);color:#fff;padding:10px 16px;z-index:100}
   .skip:focus{left:0}
 
-  body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;
-    background:radial-gradient(70% 50% at 85% 0%, rgba(184,115,51,.07), transparent 60%),
-               radial-gradient(60% 50% at 0% 100%, rgba(217,165,98,.06), transparent 60%)}
+  body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.7;
+    background:radial-gradient(60% 45% at 88% 4%, rgba(123,63,242,.08), transparent 60%),
+               radial-gradient(55% 45% at 0% 100%, rgba(45,75,255,.06), transparent 60%)}
   .wrap, header .nav{position:relative;z-index:1}
 
-  header{position:sticky;top:0;z-index:40;background:rgba(250,248,244,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  /* gradient-text helper (magnetism accent) */
+  .grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+  header{position:sticky;top:0;z-index:40;background:rgba(244,245,255,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:18px}
   .brand{display:flex;align-items:center;gap:11px}
-  .brand__emblem{height:26px;width:auto;display:block}
-  .brand__word{font-family:var(--serif);font-weight:600;font-size:23px;letter-spacing:.01em}
-  .brand__word .dot{color:var(--copper)}
+  .brand__logo{height:34px;width:auto;display:block}
   .nav__links{display:flex;align-items:center;gap:26px}
-  .nav__links a{font-size:14px;color:var(--dust);transition:color .2s var(--ease)}
-  .nav__links a:hover{color:var(--ink)}
-  .lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
-  .lang button{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.05em;background:transparent;color:var(--dust);border:0;padding:7px 12px;cursor:pointer}
-  .lang button[aria-pressed="true"]{background:var(--copper);color:#fff}
+  .nav__links a{font-size:14px;color:var(--muted);font-weight:500;transition:color .2s var(--ease)}
+  .nav__links a:not(.btn):hover{color:var(--ink)}
+  .nav__links a.btn--solid{color:#fff}
+  .lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:#fff}
+  .lang button{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.05em;background:transparent;color:var(--muted);border:0;padding:7px 12px;cursor:pointer;transition:.2s var(--ease)}
+  .lang button[aria-pressed="true"]{background:var(--grad-btn);color:#fff}
   @media(max-width:760px){.nav__links>a{display:none}}
 
-  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:15px;padding:14px 22px;border-radius:999px;cursor:pointer;transition:.25s var(--ease);border:1px solid transparent}
-  .btn--solid{background:var(--copper);color:#fff;box-shadow:0 12px 30px -14px rgba(184,115,51,.7)}
-  .btn--solid:hover{background:#a5662c;transform:translateY(-2px)}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:15px;padding:14px 22px;border-radius:999px;cursor:pointer;transition:.25s var(--ease);border:1px solid transparent;font-family:var(--sans)}
+  .btn--solid{background:var(--grad-btn);color:#fff;box-shadow:0 14px 34px -16px rgba(123,63,242,.85)}
+  .btn--solid:hover{transform:translateY(-2px);box-shadow:0 18px 40px -14px rgba(123,63,242,.9)}
   .btn--ghost{border-color:var(--line);color:var(--ink)}
-  .btn--ghost:hover{border-color:var(--copper);color:var(--copper)}
+  .btn--ghost:hover{border-color:var(--purple);color:var(--purple)}
   .btn--sm{padding:9px 16px;font-size:14px}
   .nav .btn{display:none}@media(min-width:760px){.nav .btn{display:inline-flex}}
+  /* buttons on dark surfaces */
+  .sec-dark .btn--ghost{border-color:rgba(238,240,255,.32);color:var(--whiteD)}
+  .sec-dark .btn--ghost:hover{border-color:#fff;color:#fff}
 
   section{padding:clamp(58px,8vw,104px) 0;position:relative;z-index:1}
-  .eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--copper);margin-bottom:16px;font-weight:600}
-  h1{font-family:var(--serif);font-weight:500;line-height:1.04;letter-spacing:-.015em;font-size:clamp(38px,6.6vw,70px)}
-  h2{font-family:var(--serif);font-weight:500;font-size:clamp(27px,4.2vw,44px);line-height:1.1;letter-spacing:-.01em}
-  h1 em{font-style:italic;color:var(--copper)}
-  .lede{margin-top:24px;font-size:clamp(17px,2vw,20px);color:var(--dust);max-width:34em}
-  .section__intro{max-width:42em;color:var(--dust);margin-top:16px;font-size:18px}
+  .eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:16px;font-weight:700;
+    background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block}
+  h1{font-family:var(--display);font-weight:600;line-height:1.04;letter-spacing:-.025em;font-size:clamp(38px,6.6vw,68px)}
+  h2{font-family:var(--display);font-weight:600;font-size:clamp(27px,4.2vw,44px);line-height:1.1;letter-spacing:-.02em}
+  h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lede{margin-top:24px;font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:34em}
+  .section__intro{max-width:42em;color:var(--muted);margin-top:16px;font-size:18px}
 
+  /* dark / impact sections */
+  .sec-dark{background:var(--navy);color:var(--whiteD);overflow:hidden}
+  .sec-dark h1,.sec-dark h2{color:var(--white)}
+  .sec-dark .lede,.sec-dark .section__intro,.sec-dark p{color:var(--mutedD)}
+  .sec-dark .bg-art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.5}
+  .sec-dark .veil{position:absolute;inset:0;z-index:0;pointer-events:none;
+    background:linear-gradient(180deg,rgba(7,7,37,.55),rgba(7,7,37,.82))}
+  .sec-dark .wrap{position:relative;z-index:1}
+
+  .hero{padding-top:clamp(54px,7vw,92px)}
   .hero__grid{display:grid;grid-template-columns:1fr;gap:44px;align-items:center}
   @media(min-width:940px){.hero__grid{grid-template-columns:1.1fr .9fr;gap:60px}}
-  .kicker{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--dust);margin-bottom:24px}
-  .kicker::before{content:"";width:26px;height:1px;background:var(--copper)}
+  .kicker{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mutedD);margin-bottom:24px;font-weight:600}
+  .kicker::before{content:"";width:26px;height:2px;border-radius:2px;background:var(--grad)}
   .hero__cta{margin-top:34px;display:flex;flex-wrap:wrap;gap:13px}
   .hero__art{display:grid;place-items:center}
-  .hero__art svg{width:min(90%,380px);height:auto}
+  .hero__art svg{width:min(86%,360px);height:auto;filter:drop-shadow(0 22px 60px rgba(123,63,242,.45))}
 
   .grid3{display:grid;gap:18px;margin-top:44px;grid-template-columns:1fr}
   @media(min-width:720px){.grid3{grid-template-columns:repeat(3,1fr)}}
-  .card{border:1px solid var(--line);border-radius:16px;padding:28px 24px;background:var(--ivory);transition:.3s var(--ease)}
-  .card:hover{transform:translateY(-4px);border-color:var(--amber)}
-  .card h3{font-family:var(--serif);font-weight:500;font-size:21px;margin-bottom:9px}
-  .card p{color:var(--dust);font-size:15.5px}
-  .card .k{font-family:var(--serif);font-style:italic;color:var(--copper);font-size:14px;margin-bottom:12px}
-  .stat h3{font-size:clamp(28px,3.6vw,38px);color:var(--copper)}
-  .problem h3{font-family:var(--serif);font-weight:500;font-size:19px;margin-bottom:7px}
-  .problem{padding-left:18px;border-left:2px solid var(--amber)}
-  .problem p{color:var(--dust);font-size:15px}
+  .card{border:1px solid var(--line);border-radius:16px;padding:28px 24px;background:#fff;transition:.3s var(--ease);position:relative;overflow:hidden}
+  .card::before{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:var(--grad);opacity:0;transition:opacity .3s var(--ease)}
+  .card:hover{transform:translateY(-4px);border-color:transparent;box-shadow:0 22px 50px -28px rgba(16,18,46,.4)}
+  .card:hover::before{opacity:1}
+  .card h3{font-family:var(--display);font-weight:600;font-size:21px;margin-bottom:9px;letter-spacing:-.01em}
+  .card p{color:var(--muted);font-size:15.5px}
+  .card .k{font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px;
+    background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block}
+  .stat h3{font-family:var(--display);font-size:clamp(28px,3.6vw,38px);
+    background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .problem h3{font-family:var(--display);font-weight:600;font-size:19px;margin-bottom:7px;letter-spacing:-.01em}
+  .problem{padding-left:18px;border-left:2px solid;border-image:var(--grad) 1}
+  .problem p{color:var(--muted);font-size:15px}
 
   .steps{margin-top:44px;border-top:1px solid var(--line)}
   .step{display:grid;grid-template-columns:auto 1fr;gap:22px;padding:28px 0;border-bottom:1px solid var(--line);align-items:baseline}
   @media(min-width:760px){.step{grid-template-columns:128px 1fr 1.1fr;gap:38px}}
-  .step__n{font-family:var(--serif);font-size:clamp(30px,4.4vw,46px);color:transparent;-webkit-text-stroke:1px var(--copper);line-height:1}
-  .step h3{font-family:var(--serif);font-weight:500;font-size:23px}
-  .step p{color:var(--dust);font-size:16px}
+  .step__n{font-family:var(--display);font-weight:600;font-size:clamp(30px,4.4vw,46px);line-height:1;
+    background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .step h3{font-family:var(--display);font-weight:600;font-size:23px;letter-spacing:-.01em}
+  .step p{color:var(--muted);font-size:16px}
 
-  .band{border:1px solid var(--line);border-radius:20px;padding:clamp(30px,5vw,56px);background:linear-gradient(150deg,rgba(184,115,51,.06),var(--ivory));position:relative;overflow:hidden}
-  .statement{font-family:var(--serif);font-weight:400;font-size:clamp(23px,3.4vw,36px);line-height:1.25;letter-spacing:-.01em;max-width:22ch}
+  .band{border-radius:20px;padding:clamp(34px,5vw,60px);background:var(--navy);position:relative;overflow:hidden;color:var(--whiteD)}
+  .band .band__art{position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:.85}
+  .band .eyebrow{position:relative;z-index:1}
+  .band .statement{position:relative;z-index:1;color:var(--white)}
+  .band .section__intro{position:relative;z-index:1;color:var(--mutedD)}
+  .statement{font-family:var(--display);font-weight:600;font-size:clamp(24px,3.4vw,38px);line-height:1.18;letter-spacing:-.02em;max-width:22ch}
+  .sec-dark .statement{color:var(--white)}
 
   .origin__grid{display:grid;gap:36px;grid-template-columns:1fr}
   @media(min-width:860px){.origin__grid{grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}}
-  .origin p{color:var(--dust);margin-top:15px;font-size:17px}.origin p:first-of-type{margin-top:0}
-  .origin strong{color:var(--ink);font-weight:600}
+  .origin p{margin-top:15px;font-size:17px}.origin p:first-of-type{margin-top:0}
+  .sec-dark .origin strong{color:var(--white);font-weight:600}
+  .origin em{font-style:italic}
 
-  .vein{height:1px;border:0;background:linear-gradient(90deg,transparent,var(--copper),transparent);opacity:.4;margin:0}
+  .vein{height:2px;border:0;background:var(--grad);opacity:.45;margin:0}
+
+  /* light-illustration section accent */
+  .sec-accent{position:relative;overflow:hidden}
+  .sec-accent .accent-art{position:absolute;top:-8%;right:-5%;width:min(48%,540px);z-index:0;opacity:.55;pointer-events:none;
+    -webkit-mask-image:radial-gradient(closest-side,#000 50%,transparent);mask-image:radial-gradient(closest-side,#000 50%,transparent)}
+  .sec-accent .wrap{position:relative;z-index:1}
+  @media(max-width:760px){.sec-accent .accent-art{opacity:.35;width:80%}}
 
   .faq{margin-top:36px;border-top:1px solid var(--line)}
   .faq__item{border-bottom:1px solid var(--line)}
-  .faq__item summary{font-family:var(--serif);font-weight:500;font-size:clamp(18px,2.3vw,22px);padding:20px 38px 20px 0;cursor:pointer;list-style:none;position:relative}
+  .faq__item summary{font-family:var(--display);font-weight:600;font-size:clamp(18px,2.3vw,22px);letter-spacing:-.01em;padding:20px 38px 20px 0;cursor:pointer;list-style:none;position:relative}
   .faq__item summary::-webkit-details-marker{display:none}
-  .faq__item summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);color:var(--copper);font-size:24px}
+  .faq__item summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);color:var(--purple);font-size:24px;font-family:var(--sans)}
   .faq__item[open] summary::after{content:"–"}
-  .faq__item p{color:var(--dust);font-size:16px;padding:0 38px 22px 0;max-width:60ch}
+  .faq__item p{color:var(--muted);font-size:16px;padding:0 38px 22px 0;max-width:60ch}
 
   .cta{text-align:center}.cta h2{max-width:16ch;margin:0 auto}.cta .lede{margin:18px auto 0;max-width:40ch}
   .cta__row{margin-top:32px;display:flex;justify-content:center;flex-wrap:wrap;gap:13px}
 
-  footer{border-top:1px solid var(--line);padding:44px 0 56px;position:relative;z-index:1}
+  footer{background:var(--navy);color:var(--mutedD);padding:44px 0 56px;position:relative;z-index:1;border-top:1px solid var(--lineD)}
   .foot{display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between;align-items:center}
-  .foot__brand{font-family:var(--serif);font-size:20px;font-weight:600}.foot__brand .dot{color:var(--copper)}
-  .foot small{color:var(--dust);font-size:13px;display:block;margin-top:5px}
-  .foot__tag{font-family:var(--serif);font-style:italic;color:var(--copper);font-size:16px}
+  .foot__logo{height:26px;width:auto;display:block}
+  .foot small{color:var(--mutedD);font-size:13px;display:block;margin-top:10px}
+  .foot__tag{font-family:var(--display);font-weight:600;font-size:16px;letter-spacing:-.01em;
+    background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 
   .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
   .reveal.in{opacity:1;transform:none}
@@ -175,8 +221,7 @@
 <header>
   <div class="wrap nav">
     <a class="brand" href="#main" aria-label="Imanto">
-      <img class="brand__emblem" src="assets/imanto-emblem-mono.png" alt="" onerror="this.style.display='none'" />
-      <span class="brand__word">Imant<span class="dot">o</span></span>
+      <img class="brand__logo" src="logo-kit/imanto-h-cor-claro.svg" alt="Imanto" />
     </a>
     <nav class="nav__links" aria-label="Principal">
       <a href="#como" data-i18n="nav.how">Como funciona</a>
@@ -194,7 +239,9 @@
 
 <main id="main">
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero sec-dark">
+    <img class="bg-art" src="assets/img/ilu-campo-a-16x9.webp" alt="" aria-hidden="true" fetchpriority="high" />
+    <div class="veil" aria-hidden="true"></div>
     <div class="wrap hero__grid">
       <div class="reveal">
         <span class="kicker" data-i18n="hero.kicker">Marketing magnético movido por IA</span>
@@ -206,16 +253,24 @@
         </div>
       </div>
       <div class="hero__art reveal" aria-hidden="true">
-        <svg viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Campo magnético">
-          <g stroke="#B87333" stroke-width="1.4" opacity="0.55" fill="none">
-            <path d="M160 96 C 70 96, 70 224, 160 224 C 250 224, 250 96, 160 96 Z"/>
-            <path d="M160 70 C 30 78, 30 242, 160 250 C 290 242, 290 78, 160 70 Z" opacity="0.7"/>
-            <path d="M160 48 C 0 60, 0 260, 160 272 C 320 260, 320 60, 160 48 Z" opacity="0.45"/>
+        <svg viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Campo magnético da Imanto">
+          <defs>
+            <linearGradient id="vPB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b3ff2"/><stop offset="1" stop-color="#2d4bff"/></linearGradient>
+            <linearGradient id="vRP" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff3b6b"/><stop offset="1" stop-color="#7b3ff2"/></linearGradient>
+            <linearGradient id="fl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2D4BFF"/><stop offset=".5" stop-color="#7B3FF2"/><stop offset="1" stop-color="#FF3B6B"/></linearGradient>
+            <radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="rgba(123,63,242,.55)"/><stop offset="1" stop-color="rgba(123,63,242,0)"/></radialGradient>
+          </defs>
+          <ellipse cx="180" cy="180" rx="150" ry="160" fill="url(#glow)"/>
+          <g fill="none" stroke="url(#fl)" stroke-width="1.4">
+            <ellipse cx="180" cy="180" rx="68" ry="120" opacity=".75"/>
+            <ellipse cx="180" cy="180" rx="112" ry="150" opacity=".5"/>
+            <ellipse cx="180" cy="180" rx="156" ry="174" opacity=".32"/>
           </g>
-          <rect x="132" y="146" width="56" height="28" rx="4" fill="#16140F"/>
-          <rect x="132" y="146" width="28" height="28" rx="4" fill="#B87333"/>
-          <text x="146" y="165" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#FAF8F4" text-anchor="middle">N</text>
-          <text x="174" y="165" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#D9A566" text-anchor="middle">S</text>
+          <g transform="translate(60,68) scale(2)">
+            <path d="M46 23 C58 45,58 75,46 97 C50 75,50 45,46 23 Z" fill="url(#vPB)"/>
+            <path d="M74 23 C62 45,62 75,74 97 C70 75,70 45,74 23 Z" fill="url(#vRP)"/>
+            <circle cx="60" cy="15" r="7" fill="#7b3ff2"/>
+          </g>
         </svg>
       </div>
     </div>
@@ -240,6 +295,7 @@
   <section id="motor">
     <div class="wrap">
       <div class="band reveal">
+        <img class="band__art" src="assets/img/ilu-aurora-a-16x9.webp" alt="" aria-hidden="true" loading="lazy" />
         <p class="eyebrow" data-i18n="eng.eyebrow">Ímã permanente → eletroímã</p>
         <p class="statement" data-i18n="eng.statement">Invertemos a polaridade: o mercado passa a vir até você.</p>
         <p class="section__intro" data-i18n="eng.intro">Sua autoridade e seu conteúdo já são um ímã. A gente soma IA de vanguarda e mídia, e ele vira eletroímã: o campo fica mais forte e puxa mais rápido que o do concorrente.</p>
@@ -263,7 +319,8 @@
   <hr class="vein" />
 
   <!-- PILLARS -->
-  <section id="pilares">
+  <section id="pilares" class="sec-accent">
+    <img class="accent-art" src="assets/img/ilu-aurora-light-1x1.webp" alt="" aria-hidden="true" loading="lazy" />
     <div class="wrap">
       <p class="eyebrow reveal" data-i18n="pil.eyebrow">O que você ganha</p>
       <h2 class="reveal" data-i18n="pil.h2">O mercado vira na sua direção.</h2>
@@ -290,7 +347,9 @@
   </section>
 
   <!-- ORIGIN -->
-  <section id="origem">
+  <section id="origem" class="sec-dark">
+    <img class="bg-art" src="assets/img/ilu-aurora-b-1x1.webp" alt="" aria-hidden="true" loading="lazy" />
+    <div class="veil" aria-hidden="true"></div>
     <div class="wrap origin">
       <div class="origin__grid">
         <div class="reveal"><p class="eyebrow" data-i18n="ori.eyebrow">O ímã</p><p class="statement" data-i18n="ori.statement">Imantar é transformar ferro comum em ímã.</p></div>
@@ -323,7 +382,9 @@
   <hr class="vein" />
 
   <!-- CTA -->
-  <section id="contato" class="cta">
+  <section id="contato" class="cta sec-dark">
+    <img class="bg-art" src="assets/img/ilu-particulas-a-16x9.webp" alt="" aria-hidden="true" loading="lazy" />
+    <div class="veil" aria-hidden="true"></div>
     <div class="wrap">
       <p class="eyebrow reveal" data-i18n="cta.eyebrow">Ligue o campo</p>
       <h2 class="reveal" data-i18n="cta.h2">Tem um ímã esperando na sua empresa.</h2>
@@ -339,7 +400,7 @@
 <footer>
   <div class="wrap foot">
     <div>
-      <div class="foot__brand">Imant<span class="dot">o</span></div>
+      <img class="foot__logo" src="logo-kit/imanto-h-branco.svg" alt="Imanto" />
       <small data-i18n="foot.rights">© 2026 Imanto · Marketing magnético movido por IA</small>
     </div>
     <div class="foot__tag" data-i18n="foot.tag">Vire o ímã do seu mercado.</div>
