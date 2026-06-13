@@ -1,0 +1,28 @@
+.DS_Store
+**/.DS_Store
+_build/
+refs logo/
+
+# Prompts internos de sessão (não são conteúdo do site)
+SITE-REVAMP-PROMPT.md
+CANVA-HANDOFF-PROMPT.md
+
+# Fonte da verdade verbal e estudos de marca (ficam locais ate o brandbook visual ser regenerado com o verbal v2 sem "irmanar")
+brand-book.md
+brandbook/
+marca-final/
+paleta-cosmica.html
+fontes.html
+exploracao-icone.html
+simbolos.html
+simbolos-v2.html
+simbolos-v3.html
+simbolos-v4.html
+marca-1b.html
+marca-1b-cores.html
+marca-1b-cores2.html
+marca-1b-cores4.html
+marca-1b-simetrico.html
+
+# Arte-fonte das ilustracoes (o site usa as .webp em assets/img/)
+ilustracoes/

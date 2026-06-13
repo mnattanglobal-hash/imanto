@@ -1,17 +1,22 @@
 # Imanto
 
-**Pare de perseguir. Vire o ímã.** / *Stop chasing. Become the magnet.*
-Agência de marketing AI-first para B2B — *AI-first marketing agency for B2B*.
+**Sua demanda vira contrato.**
+Parceira de crescimento para o ecossistema de construção e reforma.
 
 Preview (até o DNS apontar): https://mnattanglobal-hash.github.io/imanto/
 Domínio final: **https://imanto.com.br**
 
-Landing single-file (`index.html`, sem build, sem dependências): bilíngue **PT/EN** (PT padrão), tema **claro editorial** com acento cobre, motivo de campo magnético. Deploy via GitHub Pages.
+Site estático em **português do Brasil**, sem build e sem dependências. Tema claro com seções navy de impacto, gradiente azul/roxo/magenta, Space Grotesk + Inter, motivo de campo magnético. Deploy via GitHub Pages.
 
 ## Estrutura
-- `index.html` — site completo (HTML + CSS + JS inline; textos PT/EN no objeto `DICT`).
-- `assets/` — logo (drop-in; o site usa um motivo magnético em SVG/CSS enquanto não houver arquivos).
+- `index.html` — home institucional (oferta-mãe + ecossistema de 9 verticais).
+- `servicos/` — o Motor de Receita Imanto (Núcleo + Captação, Conversão, Expansão).
+- `planejados/`, `hvac/`, `vidracaria/` — landings por vertical (fase 1). As demais (`solar`, `marmoraria`, `arquitetura`, `construtora`, `automacao`, `piscinas`) estão especificadas em `../site/estrutura-site-imanto.md`.
+- `assets/site.css`, `assets/site.js` — sistema visual e reveal-on-scroll compartilhados.
+- `assets/`, `logo-kit/`, `brandbook/` — favicons, ilustrações, logos e o brandbook.
 - `sitemap.xml`, `robots.txt`, `.nojekyll`.
+
+> Fonte da verdade verbal: `brand-book.md`. Estilo: português do Brasil, sem travessão como muleta, sem "não é X, é Y", sem etimologia "irmanar".
 
 ## Logo (drop-in)
 Gere o símbolo com o prompt do projeto e coloque em `assets/`:
