@@ -127,6 +127,14 @@ h1 em,h2 em{font-style:normal;background:var(--grad);-webkit-background-clip:tex
 .sec-accent .wrap{position:relative;z-index:1}
 @media(max-width:760px){.sec-accent .accent-art{opacity:.35;width:80%}}
 
+.showcase{position:relative;margin-top:44px;border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 60px -32px rgba(16,18,46,.45)}
+.showcase::after{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:var(--grad);z-index:2}
+.showcase img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.showcase figcaption{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:54px 28px 22px;
+  font-family:var(--display);font-weight:500;font-size:15px;color:var(--whiteD);letter-spacing:-.01em;
+  background:linear-gradient(0deg,rgba(7,7,37,.85),rgba(7,7,37,.4) 55%,transparent)}
+.sec-dark .showcase{border-color:var(--lineD)}
+
 .faq{margin-top:36px;border-top:1px solid var(--line)}
 .faq__item{border-bottom:1px solid var(--line)}
 .faq__item summary{font-family:var(--display);font-weight:600;font-size:clamp(18px,2.3vw,22px);letter-spacing:-.01em;padding:20px 38px 20px 0;cursor:pointer;list-style:none;position:relative}
