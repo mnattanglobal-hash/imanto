@@ -1,6 +1,6 @@
 # Imanto
 
-**Sua demanda vira contrato.**
+**Crescimento para quem faz alto padrão.**
 Parceira de crescimento para o ecossistema de construção e reforma.
 
 Preview (até o DNS apontar): https://mnattanglobal-hash.github.io/imanto/
@@ -9,11 +9,11 @@ Domínio final: **https://imanto.com.br**
 Site estático em **português do Brasil**, sem build e sem dependências. Tema claro com seções navy de impacto, gradiente azul/roxo/magenta, Space Grotesk + Inter, motivo de campo magnético. Deploy via GitHub Pages.
 
 ## Estrutura
-- `index.html` — home institucional (oferta-mãe + ecossistema de 9 verticais).
-- `servicos/` — o Motor de Receita Imanto (Núcleo + Captação, Conversão, Expansão).
-- `planejados/`, `hvac/`, `vidracaria/` — landings por vertical (fase 1). As demais (`solar`, `marmoraria`, `arquitetura`, `construtora`, `automacao`, `piscinas`) estão especificadas em `../site/estrutura-site-imanto.md`.
-- `assets/site.css`, `assets/site.js` — sistema visual e reveal-on-scroll compartilhados.
-- `assets/`, `logo-kit/`, `brandbook/` — favicons, ilustrações, logos e o brandbook.
+- `index.html`: home institucional (oferta-mãe + ecossistema de 9 verticais).
+- `servicos/`: o Motor de Receita Imanto (Núcleo + Captação, Conversão, Expansão).
+- `planejados/`, `hvac/`, `vidracaria/`: landings por vertical (fase 1). As demais (`solar`, `marmoraria`, `arquitetura`, `construtora`, `automacao`, `piscinas`) estão especificadas em `../site/estrutura-site-imanto.md`.
+- `assets/site.css`, `assets/site.js`: sistema visual e reveal-on-scroll compartilhados.
+- `assets/`, `logo-kit/`, `brandbook/`: favicons, ilustrações, logos e o brandbook.
 - `sitemap.xml`, `robots.txt`, `.nojekyll`.
 
 > Fonte da verdade verbal: `brand-book.md`. Estilo: português do Brasil, sem travessão como muleta, sem "não é X, é Y", sem etimologia "irmanar".
