@@ -143,6 +143,14 @@
   .reveal{opacity:0;transform:translateY(16px);animation:rise .7s ease forwards}
   @keyframes rise{to{opacity:1;transform:none}}
   @media(prefers-reduced-motion:reduce){.reveal{animation:none;opacity:1;transform:none}}
+  .lead-form{max-width:520px;margin:8px auto 0;display:flex;flex-direction:column;gap:12px;text-align:left}
+  .lead-form .lf-row{display:flex;gap:12px}
+  @media(max-width:560px){.lead-form .lf-row{flex-direction:column}}
+  .lead-form input,.lead-form select{flex:1;width:100%;padding:14px 16px;border-radius:11px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.07);color:#fff;font-size:15.5px;font-family:inherit}
+  .lead-form input::placeholder{color:#9aa0d0}
+  .lead-form select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,#9aa0d0 50%),linear-gradient(135deg,#9aa0d0 50%,transparent 50%);background-position:calc(100% - 20px) 20px,calc(100% - 15px) 20px;background-size:5px 5px,5px 5px;background-repeat:no-repeat}
+  .lead-form select option{color:#10122E}
+  .lead-form input:focus,.lead-form select:focus{outline:none;border-color:var(--roxo);box-shadow:0 0 0 3px rgba(123,63,242,.25)}
 </style>
 </head>
 <body>
@@ -173,7 +181,7 @@
       <div class="reveal">
         <span class="badge">◆ Imanto Pipeline Blindado™ · para lojas de planejados</span>
         <h1>Sua loja não precisa de mais leads. Precisa <em>parar de perder</em> os que já entram.</h1>
-        <p class="lede">A infraestrutura comercial com IA que recupera a receita que sua loja de móveis planejados já gera, mas hoje morre entre o showroom e o fechamento.</p>
+        <p class="lede">CRM + IA de atendimento + follow-up automático que transformam mais orçamentos em contratos, sem o dono ter que cobrar vendedor no WhatsApp. A receita que sua loja de planejados já gera, mas hoje morre entre o showroom e o fechamento.</p>
         <div class="hero__cta">
           <a href="#contato" class="btn btn--solid">Receba um diagnóstico gratuito →</a>
           <a href="#metodo" class="btn btn--ghost">Ver como funciona</a>
@@ -324,11 +332,20 @@
     <div class="wrap">
       <p class="eyebrow" style="color:#b7a8ff">Diagnóstico gratuito</p>
       <h2 style="color:#fff;margin-top:14px;font-size:clamp(28px,4vw,46px)">Seu showroom pode parar de perder cliente hoje.</h2>
-      <p class="lede">Receba um diagnóstico gratuito de 20 minutos do seu funil: onde sua loja perde orçamento e o que muda com o Método Pipeline Blindado™. Uma loja por praça.</p>
-      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-        <a href="mailto:contato@imanto.com.br?subject=Diagn%C3%B3stico%20Imanto%20Planejados" class="btn btn--solid">Falar com a Imanto →</a>
-        <a href="mailto:contato@imanto.com.br" class="btn btn--ghost">contato@imanto.com.br</a>
-      </div>
+      <p class="lede">Diagnóstico gratuito de 20 minutos do seu funil: onde sua loja perde orçamento e o que muda com o Método Pipeline Blindado™. Uma loja por praça. Responda 4 campos e a gente te chama no WhatsApp.</p>
+      <form id="diagForm" class="lead-form" novalidate>
+        <div class="lf-row">
+          <input name="nome" required placeholder="Seu nome" autocomplete="name" />
+          <input name="whats" required placeholder="Seu WhatsApp (com DDD)" inputmode="tel" autocomplete="tel" />
+        </div>
+        <div class="lf-row">
+          <input name="cidade" required placeholder="Cidade / praça" autocomplete="address-level2" />
+          <select name="fat" required><option value="" disabled selected>Faturamento/mês</option><option>Até R$150k</option><option>R$150k–500k</option><option>R$500k–1,5mi</option><option>Acima de R$1,5mi</option></select>
+        </div>
+        <select name="dor" required style="width:100%"><option value="" disabled selected>Sua maior dor hoje</option><option>Demora pra responder o lead</option><option>Follow-up que morre</option><option>Equipe/vendedor esquece cliente</option><option>Falta de controle e indicadores</option></select>
+        <button type="submit" class="btn btn--solid" style="width:100%;justify-content:center;font-size:17px">Quero descobrir onde minha loja perde vendas →</button>
+        <small style="color:#9aa0d0">Sem compromisso. Uma loja por praça.</small>
+      </form>
     </div>
   </section>
 </main>
@@ -340,5 +357,26 @@
     <small>Crescimento para quem faz alto padrão.</small>
   </div>
 </footer>
+<script>
+  // Defina o WhatsApp comercial da Imanto aqui (só numeros, com DDI 55). Ex: "5531999999999".
+  // Enquanto estiver vazio, o formulario envia por e-mail com os dados qualificados.
+  var IMANTO_WHATSAPP = "";
+  var f = document.getElementById('diagForm');
+  if (f) f.addEventListener('submit', function(e){
+    e.preventDefault();
+    var d = new FormData(f);
+    var msg = "Quero um diagnostico do meu funil (Imanto Planejados).%0A"
+      + "Nome: " + encodeURIComponent(d.get('nome')||'') + "%0A"
+      + "WhatsApp: " + encodeURIComponent(d.get('whats')||'') + "%0A"
+      + "Cidade: " + encodeURIComponent(d.get('cidade')||'') + "%0A"
+      + "Faturamento: " + encodeURIComponent(d.get('fat')||'') + "%0A"
+      + "Maior dor: " + encodeURIComponent(d.get('dor')||'');
+    if (IMANTO_WHATSAPP) {
+      window.location.href = "https://wa.me/" + IMANTO_WHATSAPP + "?text=" + msg;
+    } else {
+      window.location.href = "mailto:contato@imanto.com.br?subject=Diagnostico%20Imanto%20Planejados&body=" + msg;
+    }
+  });
+</script>
 </body>
 </html>
