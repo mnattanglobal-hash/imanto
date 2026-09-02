@@ -12,7 +12,8 @@
   --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+/* canvas navy: overscroll além do documento revela o fundo do html, não branco */
+html{scroll-behavior:smooth;background-color:var(--navy)}
 body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;
   -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
