@@ -2,13 +2,4 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://imanto.com.br/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://imanto.com.br/servicos/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://imanto.com.br/planejados/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://imanto.com.br/hvac/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://imanto.com.br/vidracaria/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://imanto.com.br/solar/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://imanto.com.br/marmoraria/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://imanto.com.br/construtora/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://imanto.com.br/automacao/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://imanto.com.br/arquitetura/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://imanto.com.br/piscinas/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
